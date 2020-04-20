@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class HW2_task8 {
 
-    static int n;
+    private static int n;
 
     public static void main(String[] args) {
 

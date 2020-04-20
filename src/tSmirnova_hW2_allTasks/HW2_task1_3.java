@@ -53,21 +53,27 @@ public class HW2_task1_3 {
                 break;
             default:
                 System.out.println("День недели не соответствует заданному числу");
-
-                //TASK 3
-                //Написать программу, которая бы вывела в консоль звездочки следующим образом:
-                //*****
-                //*****
-                //*****
-                //*****
-                System.out.println("\nTASK 3");
-                for (int times = 0; times < 4; times++) {
-                    for (int line = 0; line < 5; line++) {
-                        System.out.print("* ");
-                    }
-                    System.out.println();
-                }
-
         }
+
+        //TASK 3
+        //Написать программу, которая бы вывела в консоль звездочки следующим образом:
+        //*****
+        //*****
+        //*****
+        //*****
+        System.out.println("\nTASK 3");
+        //Вариант 1
+        for (int times = 0; times < 4; times++) {
+            System.out.println("* * * * *");
+        }
+        System.out.println();
+
+        //Вариант 2
+//                for (int times = 0; times < 4; times++) {
+//                    for (int line = 0; line < 5; line++) {
+//                        System.out.print("* ");
+//                    }
+//                    System.out.println();
+//                }
     }
 }

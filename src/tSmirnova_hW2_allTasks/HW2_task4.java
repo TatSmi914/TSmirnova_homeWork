@@ -7,8 +7,8 @@ public class HW2_task4 {
     public static void main(String[] args) {
 
         Random random = new Random();
-        int numbers = 10;
-        double[] vector = new double[numbers];
+        int size = 10;
+        double[] vector = new double[size];
         for (int i = 0; i < vector.length; i++) {
             vector[i] = random.nextDouble() * 100 - 50;
         }
@@ -40,10 +40,12 @@ public class HW2_task4 {
             }
         }
 
-        System.out.println("\nСумма отрицательных элементов : ");
-        // for (int num1 : sum) {
-        System.out.print(sum + " ");
 
+        System.out.println("\nСумма отрицательных элементов : " + sum);
+
+        // System.out.println("\nСумма отрицательных элементов : ");
+        // // for (int num1 : sum) {
+        // System.out.print(sum + " ");
 
         for (int i = 0; i < vector.length; i++) {
             if (vector[i] > max) {
@@ -64,11 +66,14 @@ public class HW2_task4 {
             minIndex = temp;
         }
         for (int i = minIndex + 1; i < maxIndex; i++) {
-            multipl *= vector[i];
+            if (maxIndex - minIndex == 1 || minIndex - maxIndex == 1) {
+                System.out.println("\nПроизведение равно 0 ");
+            } else {
+                multipl *= vector[i];
+                System.out.println("\nПроизведение : ");
+                System.out.print(multipl + ", ");
+
+            }
         }
-
-        System.out.println("\nПроизведение : ");
-        System.out.print(multipl + ", ");
-
     }
 }
