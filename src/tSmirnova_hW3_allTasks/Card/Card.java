@@ -68,7 +68,6 @@ public class Card {
         static String validateCardNumber(String cardNumber) {
             final String DEFAULT_VALUE = "0000 0000 0000 0000";
             Pattern cardNumberPattern = Pattern.compile("^[0-9]{4}\\s[0-9]{4}\\s[0-9]{4}\\s[0-9]{4}$");
-            //Pattern cardNumberPattern = Pattern.compile("^[0-9]{16}$");
             Matcher cardNumberMather = cardNumberPattern.matcher(cardNumber);
             if (cardNumberMather.matches()) {
                 return cardNumber;

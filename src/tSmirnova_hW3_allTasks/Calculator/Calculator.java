@@ -27,18 +27,18 @@ public class Calculator {
     }
 
     double getSum() {
-        return this.firstNumber + this.secondNumber;
+        return firstNumber + secondNumber;
     }
 
     double getSubtraction() {
-        return this.firstNumber - this.secondNumber;
+        return firstNumber - secondNumber;
     }
 
     double getMultiplication() {
-        return this.firstNumber * this.secondNumber;
+        return firstNumber * secondNumber;
     }
 
     double getDivision() {
-        return this.firstNumber / this.secondNumber;
+        return firstNumber / secondNumber;
     }
 }
