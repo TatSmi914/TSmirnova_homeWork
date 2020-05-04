@@ -3,6 +3,6 @@ package tSmirnova_hW04_all.Animals;
 public interface IAnimalsRelations {
 
     boolean isEatAbility();
-    boolean EatableAbility();
+    boolean eatableAbility();
     void voice ();
 }

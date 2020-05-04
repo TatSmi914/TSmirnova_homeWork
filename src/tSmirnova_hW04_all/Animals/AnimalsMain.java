@@ -2,7 +2,7 @@ package tSmirnova_hW04_all.Animals;
 
 public class AnimalsMain {
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
         Animals myCat = new Cat("cat", "persian");
         Animals myDog = new Dog("dog", "mastiff");

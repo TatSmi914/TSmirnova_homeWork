@@ -36,9 +36,9 @@ public abstract class Animals implements IAnimalsRelations{
         if (this.equals(animal)){
             System.out.printf("\n%s CAN'T eat itself", this.getName());
             return;
-        } //Переопределение hashCode & equals
+        }
         if (isEatAbility()){
-            if (animal.EatableAbility() && !animal.animalFamilies.equals(this.animalFamilies)){
+            if (animal.eatableAbility() && !animal.animalFamilies.equals(this.animalFamilies)){
                 System.out.printf("\n%s eat %s", this.getName(), animal.getName());
             } else {
                 System.out.printf("\n%s CAN'T be eatable by %s", animal.getName(), this.getName());

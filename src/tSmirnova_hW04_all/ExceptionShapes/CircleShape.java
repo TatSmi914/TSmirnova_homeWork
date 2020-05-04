@@ -11,7 +11,6 @@ public class CircleShape extends ShapeSquare {
     @Override
     public void getSquare() throws ShapeException {
         double square = radius * radius * Math.PI;
-        ;
 
         if (square > 0) {
             System.out.println("Circle square :" + square);

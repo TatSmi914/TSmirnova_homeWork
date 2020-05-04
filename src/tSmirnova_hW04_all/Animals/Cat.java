@@ -4,8 +4,8 @@ public class Cat extends Animals{
 
     public Cat(String nameCat, String breed) {
         super(nameCat, breed);
-        this.animalSpecies = AnimalSpecies.CARNIVOROUS;
-        this.animalFamilies = AnimalFamilies.CATFAMILY;
+        animalSpecies = AnimalSpecies.CARNIVOROUS;
+        animalFamilies = AnimalFamilies.CATFAMILY;
     }
 
     @Override
@@ -14,7 +14,7 @@ public class Cat extends Animals{
     }
 
     @Override
-    public boolean EatableAbility() {
+    public boolean eatableAbility() {
         return true;
     }
 

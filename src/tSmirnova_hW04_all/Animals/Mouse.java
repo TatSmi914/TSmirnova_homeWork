@@ -4,8 +4,8 @@ public class Mouse extends Animals {
 
     public Mouse(String nameMouse, String breed) {
         super(nameMouse, breed);
-        this.animalSpecies = AnimalSpecies.HERBIVOROUS;
-        this.animalFamilies = AnimalFamilies.MOUSEFAMILY;
+        animalSpecies = AnimalSpecies.HERBIVOROUS;
+        animalFamilies = AnimalFamilies.MOUSEFAMILY;
     }
 
     @Override
@@ -14,7 +14,7 @@ public class Mouse extends Animals {
     }
 
     @Override
-    public boolean EatableAbility() {
+    public boolean eatableAbility() {
         return true;
     }
 
