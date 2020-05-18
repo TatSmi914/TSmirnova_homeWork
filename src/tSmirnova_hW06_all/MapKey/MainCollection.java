@@ -1,9 +1,6 @@
 package tSmirnova_hW06_all.MapKey;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MainCollection {
     public static void main(String[] args) {
@@ -23,7 +20,7 @@ public class MainCollection {
         collectionData.put(12, "Юлия");
         collectionData.put(13, "Екатерина");
 
-        List<Integer> keys = new ArrayList(collectionData.keySet());
+        HashSet<Integer> keys = new HashSet(collectionData.keySet());
         if (!keys.isEmpty()) {
             System.out.println("Массив Ключей " + keys);
         }
